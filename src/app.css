@@ -1,0 +1,504 @@
+body {
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(235, 0, 255, 1) 100%);
+}
+
+
+.conteiner-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    flex-direction: column;
+    color: white;
+}
+
+.last-part{
+    display: flex;
+    align-items: center;
+    
+}
+
+.conteiner-landing img {
+    height: 50px;
+    width: 50px;
+}
+
+.firstLink:hover,
+.secondLink:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.conteiner-landing h1 {
+    font-size: 60px;
+}
+
+.conteiner-choise {
+    display: flex;
+}
+
+.firstLink {
+    background-color: white;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.secondLink {
+    background-color: white;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.conteiner-findFour {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buton-back {
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.buton-back:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.find-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winnerYellow {
+    background-color: yellow;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid black 1px;
+
+}
+
+.winnerRed {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid black 1px;
+
+}
+
+.draw {
+    background-color: rgb(62, 59, 59);
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid black 1px;
+    color: white;
+}
+
+.turnsPlayer1 {
+    background-color: yellow;
+    height: 60px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.turnsPlayer2 {
+    background-color: red;
+    height: 60px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.butons-below {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.butons-below button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.butons-below button {
+    width: 300px;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border: solid black 1px;
+    margin: 10px;
+}
+
+.conteiner-score {
+    display: flex;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.conteiner-score h2 {
+    font-size: 60px;
+    color: white;
+}
+
+.score1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+}
+
+.score2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+.amarillo {
+    background-color: yellow;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.rojo {
+    background-color: rgb(171, 0, 0);
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.position0 {
+    position: relative;
+    animation-name: example0;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    left: 0;
+    bottom: 80px;
+
+}
+
+.position1 {
+    position: relative;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    left: 0;
+    bottom: 97px;
+
+}
+
+.position2 {
+    position: relative;
+    animation-name: example2;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    left: 0;
+    bottom: 112px;
+
+}
+
+.position3 {
+    position: relative;
+    animation-name: example3;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    left: 0;
+    bottom: 127px;
+
+}
+
+.position4 {
+    position: relative;
+    animation-name: example4;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    left: 0;
+    bottom: 142px;
+
+}
+
+.position5 {
+    position: relative;
+    animation-name: example5;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    left: 0;
+    bottom: 157px;
+
+}
+
+.conteiner-butons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.filas {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    width: 150px;
+    margin-top: 40px;
+    background-color: rgb(0, 37, 204);
+    padding: 10px;
+
+}
+
+.fila1 {
+    border-radius: 10px 0 0 10px;
+}
+
+.fila7 {
+    border-radius: 0 10px 10px 0;
+}
+
+.conteiner-columna {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+
+}
+
+.hole {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.2);
+    position: absolute;
+    z-index: 10;
+    border: solid rgb(0, 37, 204) 30px;
+}
+
+.hole1 {
+    bottom: 108px;
+}
+
+.hole2 {
+    bottom: 225px;
+}
+
+.hole3 {
+    bottom: 340px;
+}
+
+.hole4 {
+    bottom: 455px;
+}
+
+.hole5 {
+    bottom: 570px;
+}
+
+.hole6 {
+    bottom: 685px;
+}
+
+
+.columna {
+    margin: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.active {
+    width: 100px;
+}
+.active:hover{
+    cursor: pointer;
+}
+
+.desactive {
+    display: none;
+}
+
+.turnYellow {
+
+    animation: infinite resplandorAnimation 1.5s;
+}
+
+.turnRed {
+
+    animation: infinite resplandorAnimation2 1.5s;
+}
+
+@keyframes example0 {
+    0% {
+        bottom: 750px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 100px;
+        left: 0;
+    }
+}
+
+@keyframes example1 {
+    0% {
+        bottom: 650px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 100px;
+        left: 0;
+    }
+}
+
+@keyframes example2 {
+    0% {
+        bottom: 550px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 100px;
+        left: 0;
+    }
+}
+
+@keyframes example3 {
+    0% {
+        bottom: 450px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 100px;
+        left: 0;
+    }
+}
+
+@keyframes example4 {
+    0% {
+        bottom: 350px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 100px;
+        left: 0;
+    }
+}
+
+@keyframes example5 {
+    0% {
+        bottom: 250px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 100px;
+        left: 0;
+    }
+}
+
+@keyframes resplandorAnimation {
+
+    0%,
+    100% {
+
+        background-color: rgb(255, 255, 0);
+    }
+
+    50% {
+        background-color: rgb(255, 255, 255);
+
+    }
+
+}
+
+@keyframes resplandorAnimation2 {
+
+    0%,
+    100% {
+
+        background-color: red;
+    }
+
+    50% {
+        background-color: rgb(255, 255, 255);
+
+    }
+
+}

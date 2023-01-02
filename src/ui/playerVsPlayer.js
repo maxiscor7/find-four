@@ -227,7 +227,7 @@ export default function PlayerVsPLayer() {
     }
 
 
-    console.log('pl1', scorePl1, 'pl2', scorePl2)
+    
 
 
     return (

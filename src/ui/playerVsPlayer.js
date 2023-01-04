@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import '../app.css';
@@ -28,7 +28,7 @@ export default function PlayerVsPLayer() {
             // yellow 
 
             if (prueba[i][j] === 'amarillo' && prueba[i][j + 1] === 'amarillo' && prueba[i][j + 2] === 'amarillo' && prueba[i][j + 3] === 'amarillo') {
-                
+
                 activeOrNot = 'desactive'
                 prueba[i][j] = 'amarillos'
                 prueba[i][j + 1] = 'amarillos'
@@ -39,7 +39,7 @@ export default function PlayerVsPLayer() {
             }
             // red
             if (prueba[i][j] === 'rojo' && prueba[i][j + 1] === 'rojo' && prueba[i][j + 2] === 'rojo' && prueba[i][j + 3] === 'rojo') {
-                
+
                 activeOrNot = 'desactive'
                 prueba[i][j] = 'rojos'
                 prueba[i][j + 1] = 'rojos'
@@ -51,7 +51,7 @@ export default function PlayerVsPLayer() {
             if (prueba[i + 3]) {
                 //yellow
                 if (prueba[i][j] === 'amarillo' && prueba[i + 1][j] === 'amarillo' && prueba[i + 2][j] === 'amarillo' && prueba[i + 3][j] === 'amarillo') {
-                    
+
                     activeOrNot = 'desactive'
                     prueba[i][j] = 'amarillos'
                     prueba[i + 1][j] = 'amarillos'
@@ -63,7 +63,7 @@ export default function PlayerVsPLayer() {
                 }
                 //red
                 if (prueba[i][j] === 'rojo' && prueba[i + 1][j] === 'rojo' && prueba[i + 2][j] === 'rojo' && prueba[i + 3][j] === 'rojo') {
-                    
+
                     activeOrNot = 'desactive'
                     prueba[i][j] = 'rojos'
                     prueba[i + 1][j] = 'rojos'
@@ -75,7 +75,7 @@ export default function PlayerVsPLayer() {
                 }
                 //yellow
                 if (prueba[i][j] === 'amarillo' && prueba[i + 1][j + 1] === 'amarillo' && prueba[i + 2][j + 2] === 'amarillo' && prueba[i + 3][j + 3] === 'amarillo') {
-                    
+
                     activeOrNot = 'desactive'
                     prueba[i][j] = 'amarillos'
                     prueba[i + 1][j + 1] = 'amarillos'
@@ -88,7 +88,7 @@ export default function PlayerVsPLayer() {
 
                 if (prueba[i][prueba[i].length - 1] === 'amarillo' && prueba[i + 1][prueba[i].length - 2] === 'amarillo' && prueba[i + 2][prueba[i].length - 3] === 'amarillo' &&
                     prueba[i + 3][prueba[i].length - 4] === 'amarillo') {
-                    
+
                     activeOrNot = 'desactive'
                     prueba[i][prueba[i].length - 1] = 'amarillos'
                     prueba[i + 1][prueba[i].length - 2] = 'amarillos'
@@ -100,7 +100,7 @@ export default function PlayerVsPLayer() {
                 }
                 if (prueba[i][prueba[i].length - 1] === 'rojo' && prueba[i + 1][prueba[i].length - 2] === 'rojo' && prueba[i + 2][prueba[i].length - 3] === 'rojo' &&
                     prueba[i + 3][prueba[i].length - 4] === 'rojo') {
-                    
+
                     activeOrNot = 'desactive'
                     prueba[i][prueba[i].length - 1] = 'rojos'
                     prueba[i + 1][prueba[i].length - 2] = 'rojos'
@@ -112,7 +112,7 @@ export default function PlayerVsPLayer() {
 
                 //red
                 if (prueba[i][j] === 'rojo' && prueba[i + 1][j + 1] === 'rojo' && prueba[i + 2][j + 2] === 'rojo' && prueba[i + 3][j + 3] === 'rojo') {
-                    
+
                     activeOrNot = 'desactive'
                     prueba[i][j] = 'rojos'
                     prueba[i + 1][j + 1] = 'rojos'
@@ -227,7 +227,7 @@ export default function PlayerVsPLayer() {
     }
 
 
-    
+
 
 
     return (
@@ -237,33 +237,37 @@ export default function PlayerVsPLayer() {
                     <Link className="buton-back" style={{ textDecoration: 'none', color: 'black' }} to='/' >Back</Link>
                 </div>
                 <div className="find-four">
-                    <div>
-                        <div>
-                            {winner === 'yellow' ? <div className="winnerYellow"><h1>Winner player 1</h1></div> : ''}
-                            {winner === 'red' ? <div className="winnerRed"><h1>Winner player 2</h1></div> : ''}
-                            {winner === '' && count > 41 ? <div className="draw"><h1>Draw</h1></div> : ''}
-                        </div>
-                        <div>
-                            {(count % 2) === 0 ? <div className="turnsPlayer1"><h1>Player 1 Turn</h1></div> : <div className="turnsPlayer2"><h1>Player 2 Turn</h1></div>}
-                        </div>
-                    
-                        <div className="butons-below">
-                            <button onClick={playAgain}>Play again</button>
-                        </div>
-                        <div className="conteiner-score">
-                            <div className="score1">
-                                <h3>Player 1</h3>
-                                
-                                <h2>{scorePl1}</h2>
+                    <div className="conteiner-butons-score">
+                        <div className="conteiner-win-turn-play">
+                            <div>
+                                {winner === 'yellow' ? <div className="winnerYellow"><h1>Winner player 1</h1></div> : ''}
+                                {winner === 'red' ? <div className="winnerRed"><h1>Winner player 2</h1></div> : ''}
+                                {winner === '' && count > 41 ? <div className="draw"><h1>Draw</h1></div> : ''}
                             </div>
-                            <div className="score2">
-                                <h3>Player 2</h3>
-                                
-                                <h2>{scorePl2}</h2>
+                            <div>
+                                {(count % 2) === 0 ? <div className="turnsPlayer1"><h1>Player 1 Turn</h1></div> : <div className="turnsPlayer2"><h1>Player 2 Turn</h1></div>}
+                            </div>
+
+                            <div className="butons-below">
+                                <button onClick={playAgain}>Play again</button>
                             </div>
                         </div>
-                        <div className="butons-below">
-                            <button onClick={resetScore}>Reset Score</button>
+                        <div className="conteiner-score-reset">
+                            <div className="conteiner-score">
+                                <div className="score1">
+                                    <h3>Player 1</h3>
+
+                                    <h2>{scorePl1}</h2>
+                                </div>
+                                <div className="score2">
+                                    <h3>Player 2</h3>
+
+                                    <h2>{scorePl2}</h2>
+                                </div>
+                            </div>
+                            <div className="butons-below">
+                                <button onClick={resetScore}>Reset Score</button>
+                            </div>
                         </div>
 
                     </div>

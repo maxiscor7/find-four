@@ -14,10 +14,10 @@ body {
     color: white;
 }
 
-.last-part{
+.last-part {
     display: flex;
     align-items: center;
-    
+
 }
 
 .conteiner-landing img {
@@ -37,16 +37,17 @@ body {
 
 .conteiner-landing h1 {
     font-size: 60px;
+    text-align: center;
 }
 
 .conteiner-choise {
     display: flex;
+
 }
 
 .firstLink {
     background-color: white;
-    height: 250px;
-    width: 400px;
+    padding: 80px 40px 80px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,8 +59,7 @@ body {
 
 .secondLink {
     background-color: white;
-    height: 250px;
-    width: 400px;
+    padding: 80px 40px 80px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +251,7 @@ body {
     animation-timing-function: linear;
     left: 0;
     bottom: 80px;
-
+    /* circulos callendo  ***********  */
 }
 
 .position1 {
@@ -307,7 +307,7 @@ body {
 .conteiner-butons {
     display: flex;
     justify-content: center;
-
+    /* envuelve el tablero   ***************************************   */
 }
 
 .filas {
@@ -319,12 +319,13 @@ body {
     width: 150px;
     margin-top: 40px;
     background-color: rgb(0, 37, 204);
-    padding: 10px;
-
+    /* el tablero  ***************************************   */
 }
 
 .fila1 {
     border-radius: 10px 0 0 10px;
+
+    /* ****************************aca********************************** */
 }
 
 .fila7 {
@@ -335,7 +336,6 @@ body {
     position: absolute;
     bottom: 0;
     z-index: 5;
-
 }
 
 .hole {
@@ -383,7 +383,8 @@ body {
 .active {
     width: 100px;
 }
-.active:hover{
+
+.active:hover {
     cursor: pointer;
 }
 
@@ -501,4 +502,773 @@ body {
 
     }
 
+}
+
+@media only screen and (max-width: 550px) {
+    .conteiner-choise {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .hole {
+        height: 70px;
+        width: 70px;
+    }
+
+    .hole1 {
+        bottom: 210px;
+    }
+
+    .hole2 {
+        bottom: 310px;
+    }
+
+    .hole3 {
+        bottom: 410px;
+    }
+
+    .hole4 {
+        bottom: 510px;
+    }
+
+    .hole5 {
+        bottom: 610px;
+    }
+
+    .hole6 {
+        bottom: 710px;
+    }
+
+    .position0 {
+        bottom: 180px;
+    }
+
+    .position1 {
+        bottom: 190px;
+    }
+
+    .position2 {
+        bottom: 200px;
+    }
+
+    .position3 {
+        bottom: 210px;
+    }
+
+    .position4 {
+        bottom: 220px;
+    }
+
+    .position5 {
+        bottom: 230px;
+    }
+
+    .amarillo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .rojo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .filas {
+        height: 700px;
+        width: 130px;
+
+    }
+    .winnerYellow {
+        margin: 40px 10px 10px 10px;
+    }
+
+    .winnerRed {
+        margin: 40px 10px 10px 10px;
+    }
+
+    .draw {
+        margin: 40px 10px 10px 10px;
+    }
+    @keyframes example0 {
+        0% {
+            bottom: 750px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 180px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example1 {
+        0% {
+            bottom: 650px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 190px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example2 {
+        0% {
+            bottom: 550px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 200px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example3 {
+        0% {
+            bottom: 450px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 210px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example4 {
+        0% {
+            bottom: 350px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 220px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example5 {
+        0% {
+            bottom: 250px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 230px;
+            left: 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1240px) {
+    .hole {
+        height: 45px;
+        width: 45px;
+        border: solid rgb(0, 37, 204) 20px;
+
+    }
+
+    .hole1 {
+        bottom: 425px;
+    }
+
+    .hole2 {
+        bottom: 490px;
+    }
+
+    .hole3 {
+        bottom: 555px;
+    }
+
+    .hole4 {
+        bottom: 620px;
+    }
+
+    .hole5 {
+        bottom: 685px;
+    }
+
+    .hole6 {
+        bottom: 750px;
+    }
+
+    .position0 {
+        bottom: 385px;
+    }
+
+    .position1 {
+        bottom: 385px;
+    }
+
+    .position2 {
+        bottom: 385px;
+    }
+
+    .position3 {
+        bottom: 385px;
+    }
+
+    .position4 {
+        bottom: 385px;
+    }
+
+    .position5 {
+        bottom: 385px;
+    }
+
+    .amarillo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .rojo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .filas {
+        height: 500px;
+        width: 85px;
+    }
+
+    .active {
+        width: 85px;
+    }
+
+    .winnerYellow {
+        height: 100px;
+        width: 230px;
+        margin: 40px 10px 10px 10px;
+    }
+
+    .winnerRed {
+        height: 100px;
+        width: 230px;
+        margin: 40px 10px 10px 10px;
+    }
+
+    .draw {
+        height: 100px;
+        width: 230px;
+        margin: 40px 10px 10px 10px;
+    }
+
+    .conteiner-score {
+        font-size: 15px;
+        height: 140px;
+        width: 230px;
+
+    }
+
+    .conteiner-score h2 {
+        font-size: 40px;
+    }
+
+    .butons-below button{
+        width: 230px;
+        font-size: 25px;
+    }
+    .turnsPlayer1{
+        width: 230px;
+    }
+    .turnsPlayer2{
+        width: 230px;
+    }
+    .find-four h1{
+        font-size: 25px;
+    }
+    @keyframes example0 {
+        0% {
+            bottom: 750px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 380px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example1 {
+        0% {
+            bottom: 700px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 390px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example2 {
+        0% {
+            bottom: 650px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 400px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example3 {
+        0% {
+            bottom: 580px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 410px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example4 {
+        0% {
+            bottom: 520px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 380px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example5 {
+        0% {
+            bottom: 450px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 350px;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .hole {
+        height: 35px;
+        width: 35px;
+        border: solid rgb(0, 37, 204) 20px;
+
+    }
+
+    .hole1 {
+        bottom: 525px;
+    }
+
+    .hole2 {
+        bottom: 580px;
+    }
+
+    .hole3 {
+        bottom: 635px;
+    }
+
+    .hole4 {
+        bottom: 690px;
+    }
+
+    .hole5 {
+        bottom: 745px;
+    }
+
+    .hole6 {
+        bottom: 800px;
+    }
+
+    .position0 {
+        bottom: 485px;
+    }
+
+    .position1 {
+        bottom: 485px;
+    }
+
+    .position2 {
+        bottom: 485px;
+    }
+
+    .position3 {
+        bottom: 485px;
+    }
+
+    .position4 {
+        bottom: 485px;
+    }
+
+    .position5 {
+        bottom: 485px;
+    }
+
+    .amarillo {
+        height: 35px;
+        width: 35px;
+    }
+
+    .rojo {
+        height: 35px;
+        width: 35px;
+    }
+
+    .filas {
+        height: 400px;
+        width: 75px;
+    }
+
+    .active {
+        width: 75px;
+    }
+
+    .winnerYellow {
+        height: 100px;
+        width: 160px;
+        margin: 40px 10px 5px 5px;
+    }
+
+    .winnerRed {
+        height: 100px;
+        width: 160px;
+        margin: 40px 10px 5px 5px;
+    }
+
+    .draw {
+        height: 100px;
+        width: 160px;
+        margin: 40px 10px 5px 5px;
+    }
+
+    .conteiner-score {
+        font-size: 15px;
+        height: 140px;
+        width: 160px;
+        margin: 5px 10px 5px 5px;
+
+    }
+
+    .conteiner-score h2 {
+        font-size: 30px;
+    }
+
+    .butons-below button{
+        width: 160px;
+        font-size: 20px;
+        height: 35px;
+        margin: 5px 10px 5px 5px;
+
+    }
+    .turnsPlayer1{
+        width: 160px;
+        height: 50px;
+        margin: 5px 10px 5px 5px;
+    }
+   
+    .turnsPlayer2{
+        width: 160px;
+        height: 50px;
+        margin: 5px 10px 5px 5px;
+
+    }
+    .find-four h1{
+        font-size: 20px;
+    }
+    @keyframes example0 {
+        0% {
+            bottom: 800px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 490px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example1 {
+        0% {
+            bottom: 730px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 490px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example2 {
+        0% {
+            bottom: 660px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 490px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example3 {
+        0% {
+            bottom: 610px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 490px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example4 {
+        0% {
+            bottom: 590px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 490px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example5 {
+        0% {
+            bottom: 530px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 490px;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .hole {
+        height: 20px;
+        width: 20px;
+        border: solid rgb(0, 37, 204) 15px;
+
+    }
+
+    .hole1 {
+        bottom: 625px;
+    }
+
+    .hole2 {
+        bottom: 660px;
+    }
+
+    .hole3 {
+        bottom: 695px;
+    }
+
+    .hole4 {
+        bottom: 730px;
+    }
+
+    .hole5 {
+        bottom: 765px;
+    }
+
+    .hole6 {
+        bottom: 800px;
+    }
+
+    .position0 {
+        bottom: 580px;
+    }
+
+    .position1 {
+        bottom: 575px;
+    }
+
+    .position2 {
+        bottom: 570px;
+    }
+
+    .position3 {
+        bottom: 565px;
+    }
+
+    .position4 {
+        bottom: 560px;
+    }
+
+    .position5 {
+        bottom: 555px;
+    }
+
+    .amarillo {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rojo {
+        height: 20px;
+        width: 20px;
+    }
+
+    .filas {
+        height: 300px;
+        width: 50px;
+    }
+
+    .active {
+        width: 50px;
+    }
+
+    .winnerYellow {
+        height: 80px;
+        width: 160px;
+        margin: 5px 10px 5px 5px;
+    }
+
+    .winnerRed {
+        height: 100px;
+        width: 160px;
+        margin: 5px 10px 5px 5px;
+    }
+
+    .draw {
+        height: 100px;
+        width: 160px;
+        margin: 5px 10px 5px 5px;
+    }
+
+    .conteiner-score {
+        font-size: 15px;
+        height: 140px;
+        width: 160px;
+        margin: 5px 10px 5px 5px;
+
+    }
+
+    .conteiner-score h2 {
+        font-size: 30px;
+    }
+
+    .butons-below button{
+        width: 160px;
+        font-size: 20px;
+        height: 35px;
+        margin: 5px 10px 5px 5px;
+
+    }
+    .turnsPlayer1{
+        width: 160px;
+        height: 50px;
+        margin: 5px 10px 5px 5px;
+    }
+   
+    .turnsPlayer2{
+        width: 160px;
+        height: 50px;
+    }
+    .find-four h1{
+        font-size: 20px;
+    }
+    .conteiner-butons-score{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 350px;
+        height: 270px;
+        
+    }
+    .conteiner-win-turn-play{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-score-reset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @keyframes example0 {
+        0% {
+            bottom: 800px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 580px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example1 {
+        0% {
+            bottom: 750px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 575px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example2 {
+        0% {
+            bottom: 700px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 570px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example3 {
+        0% {
+            bottom: 650px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 565px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example4 {
+        0% {
+            bottom: 600px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 560px;
+            left: 0;
+        }
+    }
+    
+    @keyframes example5 {
+        0% {
+            bottom: 580px;
+            left: 0;
+        }
+    
+        100% {
+            bottom: 555px;
+            left: 0;
+        }
+    }
 }

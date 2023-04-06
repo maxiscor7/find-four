@@ -7,7 +7,7 @@
 
 <div style="display: flex" >
   <h4>Deploy:</h4>
-  <a href="[https://gym-spa-maxi.vercel.app/](https://find-four.vercel.app/)" target="_blank">🌍</a>
+  <a href="https://find-four.vercel.app/" target="_blank">🌍</a>
 </div>
 
 <h1>The project idea</h1>
